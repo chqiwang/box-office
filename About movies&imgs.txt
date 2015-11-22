@@ -1,0 +1,60 @@
+movies.txt is a pickle file;
+use pickle.load() to read this file;
+
+After read from this file,a list will be obtained.
+Here is the format of one element in the list:
+
+The element is a dict,
+key:will_watch              value:int           default_value:-1        description:How many people want to watch this movie
+key:watched                 value:int           default_value:-1        description:How many people have watched this movie
+key:rating_people_num       value:int           default_value:-1        description:How many people rated for this movie
+key:rating_score            value:float         default_value:-1        description:The average score of this movie with full score 10
+key:per_rating_5to1         value:list(float)   default_value:[]        description:The percent for people rated this movie in certain score,from 
+                                                                                    0~4 is 5stars~1stars
+key:story                   value:string        default_value:'None'    description:The brief content of this movie
+key:actors                  value:string        default_value:['None']  description:The brief content of this movie
+key:name                    value:string        default_value:'None'    description:The name of this movie with subtitle
+key:short_name              value:string        default_value:'None'    description:The name of this movie without subtitle(Example:If name is 
+                                                                                    'A:B',then short_name is 'A')
+key:tags                    value:list(string)  default_value:['None']  description:The tags people add to this movie
+key:director                value:string        default_value:'None'    description:The director of this movie
+key:authors                 value:list(string)  default_value:['None']  description:The scriptwriters of this movie
+key:date                    value:string        default_value:'None'    description:The date for this movie's first show in China,format 'Y-m-d'
+key:img_name                value:string        default_value:'None'    description:The poster image's file name for this movie,loacte in 'imgs/'
+key:total_money             value:int           default_value:-1        description:The box office for this movie,unit '万元'
+key:types                   value:list(string)  default_value:['None']  description:The types this movie belongs to
+key:better_than             value:dict(str:int) default_value:{}        description:For 'A:B',it means this movie is better than 'B%' movies of 
+                                                                                    type 'A'
+key:product_type            value:string        default_value:'None'    description:Where is the movie made
+key:language                value:list(string)  default_value:['None']  description:All possible languages for this movie's dubbing
+key:country                 value:list(string)  default_value:['None']  description:All countries that show this movie
+key:length                  value:int           default_value:-1        description:The length of this movie in 'minutes'
+key:related_movie           value:list(string)  default_value:['None']  description:All movies recommend by Douban that related to this movie in
+                                                                                    some sense
+
+An example:
+
+will_watch : 34603
+rating_people_num : 188032
+rating_score : 8.4
+watched : 213755
+story : 经历了紧张刺激的伦敦大战，多米尼克·托雷托（范·迪塞尔 Vin Diesel 饰）和他的伙伴们重新回归平静的生活，但是江湖的恩恩怨怨却决不允许他们轻易抽身而去。棘手的死对头欧文·肖瘫在医院，不得动弹，他的哥哥戴克·肖（杰森·斯坦森 Jason Stantham 饰）则发誓要为弟弟复仇。戴克曾是美国特种部队的王牌杀手，不仅身怀绝技，而且心狠手辣。他干掉了远在东京的韩，还几乎把探长卢克·霍布斯（道恩·强森 Dwayne Johnson 饰）送到另一个世界，甚至多米尼克那世外桃源般的家也被对方炸毁。　　复仇的利刃已经架在脖子上，多米尼克再也没有选择，他找到长久以来最为信赖的团队，与来势汹汹的戴克展开生死对决……
+per_rating_5to1 : [42.0, 38.2, 16.7, 2.2, 0.9]
+actors : [范·迪塞尔, 保罗·沃克, 杰森·斯坦森]
+img_url : http://img4.douban.com/view/movie_poster_cover/lpst/public/p2233706697.jpg
+short_name : 速度与激情7
+tags : [动作, 美国, 赛车, 2015, 跑车, 犯罪, 经典, 冒险]
+director : 温子仁
+authors : [克里斯·摩根 ,  盖瑞·斯科特·汤普森]
+date : 2015-04-12
+img_name : p2233706697.jpg
+total_money : 242635
+types : [动作, 犯罪]
+better_than : {动作片: 96, 犯罪片: 93}
+product_type : 进口分账
+name : 速度与激情7
+language : [英语]
+country : [美国, 中国大陆, 日本]
+length : 140
+related_movie : [速度与激情5, 碟中谍5：神秘国度, 王牌特工：特工学院, 智取威虎山, 金蝉脱壳, 疯狂的麦克斯4：狂暴之路, 杀破狼2, 这个杀手不太冷, 
+                 暴力街区, 明日边缘]
