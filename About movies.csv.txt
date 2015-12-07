@@ -1,0 +1,8 @@
+txt file generated from movies.txt
+
+1st line:
+    the order of all keys in rest lines
+rest lines:
+    each line contains all information of a movie,different keys seperated by '$',i.e. "movie[key1]$movie[key2]$...$"
+    for list,seperated by ',',i.e. "...$a,b,c,...,$..."
+    for dictionary, "...$key1:a,key2:b,...,$..."
