@@ -1,0 +1,6 @@
+I find a simple box-office normalization method that use a one order polynomial to fit the medians.
+The relationship I got is 
+**********************************
+B = year * 451.040829 - 895232.310
+**********************************
+where B is the box-office.
