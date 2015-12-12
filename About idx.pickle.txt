@@ -1,0 +1,9 @@
+Baidu search index:
+    idx.pickle is a python pickle,use pickle.load() to read this file;
+
+A dictionary is within this file,
+    
+    Key:    short_name, where you can find this in movies.txt
+    Value:  (search_index,news_index), where
+                search_index:   list of int,31 long   Baidu search index, from 30 days before to the movie's first show
+                news_index:     list of int,31 long   Baidu news index, from 30 days before to the movie's first show
